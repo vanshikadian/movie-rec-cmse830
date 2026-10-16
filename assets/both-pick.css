@@ -1,0 +1,55 @@
+/* System fonts only: no film artwork or third-party font files redistributed. */
+:root {--ink:#28221F;--muted:#62584D;--rule:#C8BFA6;--red:#AC292E;--paper:#FFF5D6;--a:#17656B;--b:#AC292E;--serif:Georgia,"Times New Roman",serif;}
+[data-testid="stMainBlockContainer"] {max-width:1120px;padding-top:3.5rem;padding-bottom:3rem;}
+[data-testid="stVerticalBlock"] {gap:.65rem;}
+.bp-header {display:grid;grid-template-columns:1fr auto;align-items:center;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin-bottom:.65rem;}
+.bp-kicker {grid-column:1 / -1;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;margin:.6rem 0 0;}
+.bp-mark {font-family:Impact,"Arial Narrow",sans-serif!important;font-weight:900!important;font-stretch:condensed;font-size:clamp(3.7rem,10vw,6rem)!important;line-height:.95!important;letter-spacing:-.035em!important;color:var(--red)!important;margin:0!important;padding:.25rem 0 .4rem!important;}
+.bp-mark b {color:var(--ink);}
+.bp-mark i {display:inline-block;color:var(--red);font-family:var(--serif);transform:rotate(12deg);font-style:italic;}
+.bp-billing {display:flex;flex-direction:column;gap:.6rem;align-items:flex-end;text-align:right;padding:.5rem 0;}
+.bp-billing p {margin:0;}
+.bp-billing>p:first-child {font-family:var(--serif);font-size:1.3rem;line-height:1.05;font-weight:bold;}
+.bp-billing em {color:var(--red);}
+.bp-credit {font-size:.65rem;letter-spacing:.13em;text-align:right;line-height:1.5;}
+.bp-note {color:var(--muted);font-size:.8rem;line-height:1.4;margin:0 0 .2rem;}
+.bp-facts {border-left:3px solid var(--c);padding-left:.7rem;margin:.1rem 0 .3rem;}
+.bp-facts p {margin:.1rem 0;font-size:.83rem;}
+.bp-section {font-family:var(--serif)!important;font-size:2rem!important;font-weight:bold!important;font-style:italic;padding:.65rem 0 .2rem!important;color:var(--red)!important;}
+[data-testid="stWidgetLabel"] p {font-size:.83rem;font-weight:650;}
+[data-testid="stCaptionContainer"] p {font-size:.78rem;}
+[data-baseweb="select"]>div {border-radius:2px!important;}
+[data-testid="stPopoverButton"], [data-testid="stDownloadButton"] button {border-radius:2px;border:1px solid var(--ink);box-shadow:2px 2px 0 var(--ink);font-size:.8rem;}
+[data-testid="stExpander"] {border-radius:0;border-color:var(--rule);}
+[data-testid="stExpander"] details summary p {font-size:.78rem;}
+[data-baseweb="tab-list"] {gap:1.5rem;border-bottom:1px solid var(--ink);}
+[data-baseweb="tab"] {font-size:.84rem;padding:.6rem 0;}
+[data-baseweb="tab"][aria-selected="true"] {font-weight:750;color:var(--red);}
+[data-testid="stAlert"] {border-radius:0;}
+table.bp-picks {width:100%;border-collapse:collapse;margin-top:.3rem;}
+table.bp-picks th,table.bp-picks td {border:0;background:transparent;}
+table.bp-picks th {text-align:left;font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:.4rem .5rem .4rem 0;}
+table.bp-picks td {border-bottom:1px solid var(--rule);padding:.65rem .5rem .65rem 0;vertical-align:middle;}
+table.bp-picks tbody tr:first-child {background:#F3DE9A;}
+table.bp-picks .rk {width:2.5rem;color:var(--red);font-family:var(--serif);font-style:italic;font-size:1.4rem;padding-left:.3rem;}
+table.bp-picks .ttl {font-family:var(--serif);font-weight:bold;font-size:1.2rem;color:var(--ink);}
+table.bp-picks .yr {color:var(--muted);font-size:.8rem;margin-left:.35rem;}
+table.bp-picks .gn {color:var(--muted);font-size:.75rem;}
+table.bp-picks .num {white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;padding-right:.7rem;}
+table.bp-picks .num small {color:var(--muted);font-size:.65rem;}
+table.bp-picks .ca {color:var(--a);font-weight:700;}
+table.bp-picks .cb {color:var(--b);font-weight:700;}
+table.bp-picks th.num {text-align:right;}
+@media(max-width:640px) {
+[data-testid="stMainBlockContainer"] {padding-top:3.5rem;}
+.bp-credit {display:none;}
+.bp-billing {padding-left:.5rem;}
+.bp-credit {font-size:.5rem;letter-spacing:.06em;}
+.bp-billing>p:first-child {font-size:1.3rem;}
+[data-baseweb="tab-list"] {gap:.7rem;}
+[data-baseweb="tab"] {font-size:.72rem;}
+table.bp-picks .ttl {font-size:1rem;}
+table.bp-picks .num {padding-right:.25rem;font-size:.85rem;}
+table.bp-picks .num small {display:none;}
+table.bp-picks .rk {width:1.5rem;font-size:1.1rem;}
+}

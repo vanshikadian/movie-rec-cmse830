@@ -1,0 +1,6 @@
+-r requirements-demo.txt
+scipy==1.13.0
+scikit-surprise==1.1.5
+jupyter
+nbconvert
+ipykernel

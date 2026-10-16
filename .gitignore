@@ -1,0 +1,33 @@
+# Raw data and generated artifacts stay local.
+ml-32m/
+ml-32m.zip
+data/raw/
+data/processed/
+models/
+outputs/
+.local/
+*.zip
+*.tar.gz
+*.pkl
+*.joblib
+# Local analysis and progress records.
+docs/data_quality.md
+docs/progress.md
+# Credentials and machine configuration.
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.claude/
+.codex/
+.idea/
+.vscode/
+# Python and notebook caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
